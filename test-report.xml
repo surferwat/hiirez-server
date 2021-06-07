@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite id="0" name="/home/w/Desktop/web-app/fanddly-server/src/__tests__/index.test.ts" errors="0" package="/home/w/Desktop/web-app/fanddly-server/src/__tests__/index.test.ts" hostname="localhost" tests="1" failures="0" time="0.584" timestamp="2021-06-07T00:39:29">
+  <testsuite id="0" name="/home/w/Desktop/web-app/fanddly-server/src/__tests__/index.test.ts" errors="0" package="/home/w/Desktop/web-app/fanddly-server/src/__tests__/index.test.ts" hostname="localhost" tests="1" failures="0" time="0.587" timestamp="2021-06-07T01:14:45">
     <properties>
     </properties>
     <testcase classname="Basic test" name="should be written" time="0">
