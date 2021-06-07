@@ -1,1 +1,1 @@
-web: bin/start-nginx node ./built/index
+web: bin/start-nginx node ./build/src/index

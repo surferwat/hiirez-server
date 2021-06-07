@@ -1,14 +1,14 @@
 {
   "name": "fanddly-server",
   "private": true,
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Server app for fanddly",
   "main": "build/index.js",
   "types": "build/index.d.ts",
   "scripts": {
     "start": "node ./build/src/index",
     "devstart": "nodemon ./build/src/index",
-    "build": "npm run build:clean && tsc",
+    "build": "npm run build:clean && npm run compile",
     "build:docs": "typedoc --options typedoc.js --plugin typedoc-plugin-markdown src/ --out docs",
     "build:clean": "rm -rf build/*",
     "compile": "tsc",
