@@ -10,12 +10,11 @@ Object.defineProperty(exports, "__esModule", { value: true });
 if (process.env.NODE_ENV !== 'production') {
     require('dotenv').config();
 }
-;
 /**
  * Module dependencies.
  */
 const app_1 = __importDefault(require("./app"));
-const debug = require('debug')('004-multisnap-server:server');
+const debug = require('debug')('fanddly-server:server');
 const http_1 = __importDefault(require("http"));
 const fs_1 = __importDefault(require("fs"));
 /**
@@ -57,9 +56,7 @@ function onError(error) {
     if (error.syscall !== 'listen') {
         throw error;
     }
-    const bind = typeof port === 'string'
-        ? 'Pipe ' + port
-        : 'Port ' + port;
+    const bind = typeof port === 'string' ? 'Pipe ' + port : 'Port ' + port;
     // handle specific listen errors with friendly messages
     switch (error.code) {
         case 'EACCES':
@@ -83,9 +80,7 @@ function onListening() {
         debug('Listening on, Just kidding! - server address was null');
     }
     else {
-        const bind = typeof addr === 'string'
-            ? 'pipe ' + addr
-            : 'port ' + addr.port;
+        const bind = typeof addr === 'string' ? 'pipe ' + addr : 'port ' + addr.port;
         debug('Listening on ' + bind);
     }
 }
