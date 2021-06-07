@@ -8,7 +8,7 @@
   "scripts": {
     "start": "node ./build/src/index",
     "devstart": "nodemon ./build/src/index",
-    "build": "npm run build:clean && npm run compile",
+    "build": "npm run build:clean && tsc",
     "build:docs": "typedoc --options typedoc.js --plugin typedoc-plugin-markdown src/ --out docs",
     "build:clean": "rm -rf build/*",
     "compile": "tsc",
